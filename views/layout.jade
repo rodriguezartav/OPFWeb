@@ -1,0 +1,188 @@
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title Hubble Template by Littlesparkvt.com
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='LittlesparkVT')
+    link(rel='stylesheet', href='/application.css', type='text/css', charset='utf-8')
+    //
+       Le HTML5 shim, for IE6-8 support of HTML5 elements 
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    //
+       Le fav and touch icons 
+    link(rel='shortcut icon', href='')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='')
+    link(rel='apple-touch-icon-precomposed', href='')
+    //link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600', rel='stylesheet', type='text/css')
+    script(src='/application.js', type='text/javascript', charset='utf-8')
+    script(type='text/javascript', charset='utf-8')
+      var jQuery  = require("jqueryify");
+      var exports = this;
+      jQuery(function(){
+      var App = require("index");
+      exports.app = new App({el: $("body")});
+      });
+
+  body
+    .static
+      #header
+        .container
+          .row-fluid
+            .span8
+              h1(style="margin-top:34px;font-size: 65px;")
+                span OPF
+                span(style="color:red"). //
+            .span4
+              h1#contact.pull-right Call: 1800 MY NUM
+
+      #intro
+        .container
+          .row-fluid
+            #introtext.span5
+              h1 Amazing Frontends for Business Management Apps
+              p
+                | Startup and Corporate Apps alike need to step up, being responsive, social, realtime 
+              br
+              br
+              br
+              button.btn.btn-success.btn-large(href='#') Get a Free 30-Day Trial Now!
+            .span7.
+              <img src="http://placehold.it/450x281" alt="" class="pull-right"  id="vid"  >
+
+    .container
+      #newsletter.well
+        h1 To stay updated subscibe to our newsletter.
+        button.btn.btn-primary.btn-large.pull-right(type='submit', data-toggle='modal', href='#myModal') Click Here
+
+    .container
+      .row-fluid
+        .span3
+          img.pull-left(src='img/icon1.png')
+          h2.feature Customisation
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+        
+        .span3
+          img.pull-left(src='img/icon2.png')
+          h2.feature Responsive
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+
+        .span3
+          img.pull-left(src='img/icon3.png')
+          h2.feature Minimal
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+
+
+        .span3
+          img.pull-left(src='img/icon4.png')
+          h2.feature Cross Browser
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+        .clear
+
+      .row-fluid
+
+        .span3
+          img.pull-left(src='img/icon5.png')
+          h2.feature Modern UI
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+
+        .span3
+          img.pull-left(src='img/icon7.png')
+          h2.feature Support
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+
+
+        .span3
+          img.pull-left(src='img/icon8.png')
+          h2.feature Docs
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+
+        .span3
+          img.pull-left(src='img/icon6.png')
+          h2.feature Love This
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+
+
+    br
+    br
+    br
+    .container
+      .row-fluid
+        h1 Screenshots
+        ul.thumbnails
+          li.span4
+            a.thumbnail(href='http://placehold.it/260x168')
+              img.tooltips(src='http://placehold.it/268x168', alt='', rel='tooltip', data-original-title='Click To See LightBox')
+          li.span2
+            a.thumbnail(href='http://placehold.it/260x168')
+              img.tooltips(src='http://placehold.it/120x70', alt='', rel='tooltip', data-original-title='Click To See LightBox')
+          li.span2
+            a.thumbnail(href='http://placehold.it/260x168')
+              img.tooltips(src='http://placehold.it/120x70', alt='', rel='tooltip', data-original-title='Click To See LightBox')
+          li.span2
+            a.thumbnail(href='http://placehold.it/260x168')
+              img.tooltips(src='http://placehold.it/120x70', alt='', rel='tooltip', data-original-title='Click To See LightBox')
+          li.span2
+            a.thumbnail(href='http://placehold.it/260x168')
+              img.tooltips(src='http://placehold.it/120x70', alt='', rel='tooltip', data-original-title='Click To See LightBox')
+          li.span2
+            a.thumbnail(href='http://placehold.it/260x168', data-toggle='modal')
+              img.tooltips(src='http://placehold.it/120x70', alt='', rel='tooltip', data-original-title='Click To See LightBox')
+
+
+
+
+    .container
+      .row-fluid
+        .span6
+          h1 Our Team
+          br
+          img.roundimg.popovers(src='http://placehold.it/100x100', alt='', rel='popover', data-content='A brief info about john doe', data-original-title='John Doe')
+          img.roundimg.popovers(src='http://placehold.it/100x100', alt='', rel='popover', data-content='A brief info about john doe', data-original-title='John Doe')
+          img.roundimg.popovers(src='http://placehold.it/100x100', alt='', rel='popover', data-content='A brief info about john doe', data-original-title='John Doe')
+          p
+          
+        .span6
+          h1 Clients Testimonials
+          br
+          blockquote
+            p
+              | Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+            small Someone famous
+          blockquote
+            p
+              | Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+            small Someone famous
+
+      br
+      br
+      br
+
+    footer
+      .container
+        .row-fluid
+          .span6
+            p All rights reserved. 2012 © Curious Designs
+          
+          .span6
+            .social-networking-icons
+              a.facebook.tooltips(href='http://www.facebook.com/', target='_blank', rel='tooltip', data-original-title='Facebook') Facebook
+              a.twitter.tooltips(href='http://www.twitter.com/', target='_blank', rel='tooltip', data-original-title='Twitter') Twitter
+              a.dribbble.tooltips(href='http://dribbble.com/', target='_blank', rel='tooltip', data-original-title='Dribble') Dribbble
+              a.forrst.tooltips(href='http://forrst.com', target='_blank', rel='tooltip', data-original-title='Forrst') Forrst
+              a.vimeo.tooltips(href='http://vimeo.com', target='_blank', rel='tooltip', data-original-title='Vimeo') Vimeo
+              a.youtube.tooltips(href='http://youtube.com', target='_blank', rel='tooltip', data-original-title='Youtube') Youtube
+              a.linkedin.tooltips(href='http://linkedin.com', target='_blank', rel='tooltip', data-original-title='Linkedin') linkedin
+              a.tumblr.tooltips(href='http://www.tumblr.com', target='_blank', rel='tooltip', data-original-title='Tumblr') Tumblr
+
